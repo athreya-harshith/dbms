@@ -1,0 +1,357 @@
+body
+{
+    text-align: center;
+    background-color: #EFF5F5;
+}
+
+
+
+/* the css of the navigation bar */
+.navbar
+{
+    padding: 10px;
+    /* background-color:#A6BB8D; */
+    background-color: #61876E;
+    text-align: justify;
+}
+nav .navbar-brand span
+{
+    font-size:xx-large;
+    color: #EAE7B1;
+    /* font-weight:500; */
+}
+nav .navbar-brand span:hover
+{
+    color: #ffffff;
+}
+/* this below is not working */
+.navbar-toggler span
+{
+    color: #ffffff !important;
+}
+.nav-link
+{
+    color: #FCFFE7 !important;
+}
+.search
+{
+    margin-right: 2%;
+    background-color: #ffffff;
+    border-radius: 50px;
+    padding: 0 1.2%;
+}
+.search-form
+{
+    margin: 0;
+}
+.search-form .form-control
+{
+    border: none;
+    /* margin-left: ; */
+}
+.search-button, .microphone
+{
+    background-color: transparent;
+    border: none;
+}
+.account
+{
+    background-color: #ffffff;
+    display: inline-block;
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+    text-align: center;
+}
+.account span
+{
+    padding: 2%;
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: black !important;
+}
+.mob-acc
+{
+    display: none;
+    color: #ffffff;
+}
+/* Separation Between NavBar and Corousel */
+.nav-corousel-sep
+{
+    background-color: #EFF5F5;
+    height: 5vh;
+    padding: 0.8rem;
+    margin-bottom: 0.7rem;
+}
+/* .mob-sep
+{
+    display: inline-block;
+} */
+.sep-items
+{
+    display: inline-block;
+    position: absolute;
+    left: 5%;
+}
+.sep-items span
+{
+    margin-right: 1rem;
+}
+
+
+.sep-items1
+{
+    position: absolute;
+    right: 5%;
+}
+.sep-items1 span
+{
+    margin-left: 1rem;
+    font-size: larger;
+    color: black;
+}
+/* corousel css */
+/* #corousel
+{
+    width: 60vw;
+    display: inline-block !important;
+} */
+#corousel .corousel-img
+{
+    height: 60vh;
+}
+.eg
+{
+    display: inline-block;
+}
+/* Category Buttons */
+.category-button
+{
+    /* margin: 1.5rem 0; */
+    background-color: #ffffff;
+    padding: 2rem;
+}
+
+.anchor-btn
+{
+    padding: 0.5rem;
+    border: 0.5px solid black;
+    margin: 0.8rem 1rem;
+    display: inline-block;
+    text-decoration: none;
+    color: #61876E;
+    border-color: #61876E;
+    min-width: 15%;
+    font-weight: 500;
+}
+.anchor-btn:hover
+{
+    background-color: #A9AF7E;
+    color: #ffffff;
+    -webkit-box-shadow: 11px 13px 33px -12px rgba(0,0,0,0.57);
+    -moz-box-shadow: 11px 13px 33px -12px rgba(0,0,0,0.57);
+    box-shadow: 11px 13px 33px -12px rgba(0,0,0,0.57);
+}
+.category-button p
+{
+    font-weight: 150;
+    text-align: center;
+}
+
+
+
+/* Shop By Category */
+
+#category h4
+{
+    background-color: #EFF5F5;
+    color: #439A97;
+    margin: 2rem;
+}
+
+.personal-care
+{
+    display: inline-block;
+    width: 85vw;
+    margin: auto;
+    text-align: justify;
+}
+.personal-care-product
+{
+    display: inline-block;
+    width: 30%;
+    margin: 0.8rem;
+    position: relative;
+    /* border: 0.5px solid black; */
+}
+.personal-care-product .pc-img-container
+{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+}
+.pc-img-container img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s ease-in;
+}
+.pc-btn
+{
+    display: inline-block;
+    position: absolute;
+    left: 10%;
+    bottom: 12%;
+}
+.pc-btn a
+{
+    border: 2px solid white;
+    padding: 0.2rem;
+    background-color: #EFF5F5;
+    color: black;
+    text-decoration: none;
+    opacity: 0.85;
+}
+.personal-care-footer
+{
+   padding: 1.5rem;
+}
+.personal-care-footer  p
+{
+    margin: 1rem;
+    font-weight: 200;
+}
+.personal-care-footer hr
+{
+    width: 70%;
+    margin: 2rem auto;
+}
+
+/* Footer */
+footer
+{
+    background-color: #61876E;
+    padding: 5%;
+    color: #ffff;
+}
+.footer-link :hover
+{
+    /* color: #FCFDF2; */
+    color: #EAE7B1
+}
+footer hr
+{
+    border-top-color:#EFF5F5 ;
+    
+}
+footer .social-icons
+{
+    display: inline-block;
+    margin-right: 4%;
+    font-size: 2rem;
+}
+footer .social-icons:hover
+{
+    color: #EAE7B1
+}
+
+
+
+/* MEDIA QUERIES */
+
+
+/* For less than Deskop 990x */
+
+@media screen and (max-width:990px)
+{
+    /* this query is written for the Account Display of nav bar in the mobile Dropdown */
+    .mob-acc
+    {
+        display: inline;
+    }
+}
+@media screen and (max-width : 480px) {
+
+    /* navigation bar */
+    .account
+    {
+        margin-top: 1.5rem;
+    }
+    .account span
+    {
+        padding: 5px;
+        font-size: 1.9em;
+        font-weight: 500;
+        margin-top: 20px;
+    }
+    /* corousel */
+    #corousel .corousel-img
+    {
+         height: 35vh;
+    }
+    /* Shop By Category */
+    #category .container .row .card
+    {
+        margin-top: 5%;
+    }
+}
+
+@media screen and (max-width : 1002px) {
+    /* This is for the personal care product for below some size */
+    .personal-care
+    {
+        text-align: center;
+        margin: auto;
+        width: 90vw;
+    }
+    .personal-care-product
+    {
+        width: 100%;
+    }
+}
+
+/* 
+       <div class="container text-center">
+            <div class="row">
+                <div class="card col-lg-3 col-md-6 col-sm-1" >
+                    <img src="media/personalcare.avif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Personal Care</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+
+                <div class="card col-lg-3 col-md-6 col-sm-1" >
+                    <img src="media/medicines.avif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Medicines</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+
+                <div class="card col-lg-3 col-md-6 col-sm-1" >
+                    <img src="media/babycare.avif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+
+                <div class="card col-lg-3 col-md-6 col-sm-1">
+                    <img src="media/healthandnutrition.avif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Health And Nutrition</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+*/
